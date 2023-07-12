@@ -2,4 +2,4 @@
 
 * Студент: [Artur  Pletnev](https://up.htmlacademy.ru/htmlcss/36/user/2264957).
 
-Затраченное время: 
+Затраченное время: 39,5 часов
