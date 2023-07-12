@@ -686,9 +686,37 @@ body {
   display: grid;
   grid-template-columns: 370px 370px 370px;
   grid-template-rows: 180px 180px 180px;
+  grid-template-areas:
+    "materials tools tech"
+    "slider slider discount"
+    "slider slider delivery";
   gap: 30px;
   list-style-type: none;
   padding: 0;
+}
+
+.product-item-menu-materials {
+  grid-area: materials;
+}
+
+.product-item-menu-tools {
+  grid-area: tools;
+}
+
+.product-item-menu-technique {
+  grid-area: tech;
+}
+
+.slider-current {
+  grid-area: slider;
+}
+
+.product-item-menu-discount {
+  grid-area: discount;
+}
+
+.product-item-menu-delivery {
+  grid-area: delivery;
 }
 
 .product-item-menu {
@@ -760,8 +788,6 @@ body {
 
 .product-item-menu-delivery {
   background-color: #ffbf47;
-  grid-column: 3;
-  grid-row: 3;
 }
 
 .product-item-menu-delivery::after {
@@ -770,8 +796,6 @@ body {
 
 .product-item-menu-drill {
   width: 770px;
-  grid-column: 1/3;
-  grid-row: 2/3;
   background-color: #293449;
 }
 
@@ -834,7 +858,7 @@ body {
   background-image: url("../images/background/slider-perf.jpg");
 }
 
-.slider-perforator {
+.slider:not(.slider-current) {
   display: none;
 }
 
